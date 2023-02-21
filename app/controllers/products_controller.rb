@@ -5,5 +5,6 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    current_user.recently_viewed_products << @product.id
   end
 end

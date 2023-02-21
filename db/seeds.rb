@@ -9,3 +9,7 @@
 10.times do
   Movie.create title: Faker::Movie.unique.title
 end
+
+10.times do
+  Product.create name: Faker::Commerce.product_name
+end
